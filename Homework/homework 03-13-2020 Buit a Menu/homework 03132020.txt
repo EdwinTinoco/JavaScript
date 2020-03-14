@@ -1,0 +1,57 @@
+Build out a Diner Menu using JavaScript: https://bottega.devcamp.com/12/guide/2220
+
+Follow the instructions on the guide above. I want you to try using OOP principles to build this out, 
+but get it working however you can. Think about your edge cases. If an input is expecting a number but 
+gets a string, what happens? etc.
+
+You can use HTML, CSS, and JS to build out the menu. Students have also used alerts in the browser. 
+Build it however you see fit.
+
+
+Essay Questions:
+
+What is MongoDB?
+What is a MongoDB Collection?
+What is a Document and how do you use them in mongodb?
+What is the find() method used for?
+What is the .pretty used for?
+What is the difference between SQL databases and Mongodb?
+How would you add a document in a mongodb database?
+How would you use a projection?
+How do you run a local instance of mongo?
+How would you delete a document?
+
+How do you set varaibles in javascript?
+What is javascript hoisting?
+List 3 javascript datatypes?
+How do you use conditionals in javascript?
+What is a switch statement, and how would you use one?
+What is a ternary operator?
+What is a function?
+What is a function argument?
+What is the "this" keyword in javascript?
+What is a Javascript array?
+What is a Javascript object?
+List 3 types of javascript loops?
+Explain the const variable.
+What do you use for modern string interpolation in Javasript?
+Explain an arrow function and how you might use one.
+What is array destructuring?
+What is the javascript spread operator what is it used for?
+What is Variable Deconstruction in Javascript?
+How does the this keyword work with arrow functions?
+How do you pass a javscript object as function arguments by leveraging decontruction?
+What is a Javascript Promise?
+What is a Javascript fetch Promise and how might you use it?
+
+If you weren't here, watch up to and including:
+Implementing Error Handling in a JavaScript Async / Await Function
+https://bottega.devcamp.com/12/guide/1348
+
+Keep yourself busy. Try out some code wars challenges to get yourself primed each day.
+
+Code Wars https://www.codewars.com
+
+Code every single day. I can't stress this enough. Go back through and study!
+
+Enjoy your spring break!
