@@ -1,0 +1,56 @@
+/* Content Styles */
+.content-wrapper{
+    background-color: #a9a9b1;
+    background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(#000000), to(#ffffff));
+}
+
+.content-wrapper .section-menu-wrapper .menu-title{
+    padding-top: 10px;
+    color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+}
+.content-wrapper .section-menu-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.content-wrapper .section-menu-wrapper .menus-wrapper{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+}
+
+.content-wrapper .section-menu-wrapper .total-wrapper{
+    background-color: #383849;
+    color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.content-wrapper .section-menu-wrapper .total-wrapper .show-total{
+    padding: 0px 20px;
+}
+
+.content-wrapper .section-menu-wrapper .total-wrapper .show-total p{
+    color: whitesmoke;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.content-wrapper .section-menu-wrapper .buttons-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.checkbox-wrapper label{
+    font-size: 1.2rem;  
+}
+
+.waitress-comment-wrapper .waitress-comment p{
+    font-size: 0.8em;
+}

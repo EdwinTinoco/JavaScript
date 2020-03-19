@@ -1,0 +1,10 @@
+/*Common Styles*/
+body{
+    margin: 0px; 
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1,p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}

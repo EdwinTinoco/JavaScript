@@ -1,0 +1,60 @@
+/* Navigation bar Styles */
+.navbar-wrapper{
+    height: 90px;
+    background-color: #383849;
+    /* font-size: 1.2em; */
+    color: darkgoldenrod;
+    display: flex;    
+    align-items:center;
+    /* padding: 0px 100px;  */
+}
+
+.navbar-wrapper .left-column .logo-image{
+    display: flex;
+    justify-content: left;
+}
+
+.navbar-wrapper .left-column .logo-image img{
+    width: 115px;
+    height: 60%;
+}
+
+.navbar-wrapper .right-column{
+    display: grid;
+    grid-template-columns: 1fr;    
+    width: 500px;
+    margin-left: 300px;
+}
+
+.navbar-wrapper .right-column .menu-options{ 
+    color: darkgoldenrod;
+    margin-left: 220px;
+}
+
+.navbar-wrapper .right-column .menu-options p{ 
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+}  
+
+.navbar-wrapper .right-column .links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-wrapper .right-column .links-wrapper > .nav-link a {    
+    color:darkgoldenrod;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-decoration: none;   
+}
+
+.navbar-wrapper .right-column .links-wrapper > .nav-link a:hover {
+    color: white;    
+}
+
+
+
+
+
+
