@@ -82,6 +82,48 @@ fourthOpEnMe = () => {
     } 
 }
 
+fifthOpEnMe = () => {
+    var entreeCb5 = document.getElementById('entreeCb5');
+    var entreeComment = document.getElementById("entree-comment");
+    let entreeMenuWaitressComments = [
+        "You have a good taste Sr.!",
+        "That's my favorite meal.",
+        "Do you want spicy sauce?",
+        "It's a nice day to enjoy a nice entree plate.",
+        "I prefer this meal than the other one!"
+    ]
+    
+    randomComment = (entreeMenuWaitressComments) => {
+        let idxComment = Math.floor(Math.random() * entreeMenuWaitressComments.length);
+        return entreeMenuWaitressComments[idxComment];
+    }         
+
+    if (entreeCb5.checked){                   
+        entreeComment.innerHTML += `- ${randomComment(entreeMenuWaitressComments)}. You have two sides choices included in your meal!<br/>`;                    
+    } 
+}
+
+sixthOpEnMe = () => {
+    var entreeCb6 = document.getElementById('entreeCb6');
+    var entreeComment = document.getElementById("entree-comment");
+    let entreeMenuWaitressComments = [
+        "You have a good taste Sr.!",
+        "That's my favorite meal.",
+        "Do you want spicy sauce?",
+        "It's a nice day to enjoy a nice entree plate.",
+        "I prefer this meal than the other one!"
+    ]
+    
+    randomComment = (entreeMenuWaitressComments) => {
+        let idxComment = Math.floor(Math.random() * entreeMenuWaitressComments.length);
+        return entreeMenuWaitressComments[idxComment];
+    }         
+
+    if (entreeCb6.checked){                   
+        entreeComment.innerHTML += `- ${randomComment(entreeMenuWaitressComments)}. You have two sides choices included in your meal!<br/>`;                    
+    } 
+}
+
 firstOpSiMe = () => {
     var sideCb1 = document.getElementById('sideCb1');            
     var sideComment = document.getElementById("side-comment");
@@ -139,15 +181,57 @@ thirdOpSiMe = () => {
     } 
 }
 
+fourthOpSiMe = () => {
+    var sideCb4 = document.getElementById('sideCb4');
+    var sideComment = document.getElementById("side-comment");
+    let sideMenuWaitressComments = [
+        "I love that side!",
+        "Good side choice.",
+        "This side taste good with everything."
+    ]  
+    
+    randomComment = (sideMenuWaitressComments) => {
+        let idxComment = Math.floor(Math.random() * sideMenuWaitressComments.length);
+        return sideMenuWaitressComments[idxComment];
+    }
+    
+    if (sideCb4.checked){
+        sideComment.innerHTML += `- ${randomComment(sideMenuWaitressComments)}.<br/>`;                    
+    } 
+}
+
+fifthOpSiMe = () => {
+    var sideCb5 = document.getElementById('sideCb5');
+    var sideComment = document.getElementById("side-comment");
+    let sideMenuWaitressComments = [
+        "I love that side!",
+        "Good side choice.",
+        "This side taste good with everything."
+    ]  
+    
+    randomComment = (sideMenuWaitressComments) => {
+        let idxComment = Math.floor(Math.random() * sideMenuWaitressComments.length);
+        return sideMenuWaitressComments[idxComment];
+    }
+    
+    if (sideCb5.checked){
+        sideComment.innerHTML += `- ${randomComment(sideMenuWaitressComments)}.<br/>`;                    
+    } 
+}
+
 clearValues = () => {
-    if (confirm("Do you want to clear all the values in the Breakfast Menu?")) {
+    if (confirm("Do you want to clear all the values in the Dinner Menu?")) {
         var entreeCb1 = document.getElementById('entreeCb1');
         var entreeCb2 = document.getElementById('entreeCb2');
         var entreeCb3 = document.getElementById('entreeCb3');
         var entreeCb4 = document.getElementById('entreeCb4');
+        var entreeCb5 = document.getElementById('entreeCb5');
+        var entreeCb6 = document.getElementById('entreeCb6');
         var sideCb1 = document.getElementById('sideCb1');
         var sideCb2 = document.getElementById('sideCb2');
         var sideCb3 = document.getElementById('sideCb3');
+        var sideCb4 = document.getElementById('sideCb4');
+        var sideCb5 = document.getElementById('sideCb5');
         var sideComment = document.getElementById("side-comment");
         var entreeComment = document.getElementById("entree-comment");
         const totalUp = document.getElementById("total");  
@@ -167,6 +251,12 @@ clearValues = () => {
         if (entreeCb4.checked){
             entreeCb4.checked = false;              
         }
+        if (entreeCb5.checked){
+            entreeCb5.checked = false;              
+        }
+        if (entreeCb6.checked){
+            entreeCb6.checked = false;              
+        }
         if (sideCb1.checked){
             sideCb1.checked = false;              
         } 
@@ -176,21 +266,31 @@ clearValues = () => {
         if (sideCb3.checked){
             sideCb3.checked = false;              
         } 
+        if (sideCb4.checked){
+            sideCb4.checked = false;              
+        } 
+        if (sideCb5.checked){
+            sideCb5.checked = false;              
+        } 
     }
 }
 
 function orders(){
-    const breakfastEntreePrices = {
-        1: 13.99,
-        2: 12.99,
-        3: 10.99,
-        4: 11.99
+    const dinnerEntreePrices = {
+        1: 32.99,
+        2: 30.99,
+        3: 35.99,
+        4: 40.99,
+        5: 42.99,
+        6: 55.99
     }
 
-    const breakfastSidePrices = {
-        1: 2.99,
-        2: 1.99,
-        3: 3.99
+    const dinnerSidePrices = {
+        1: 10.99,
+        2: 11.99,
+        3: 9.99,
+        4: 14.99,
+        5: 19.99
     }
 
     function entreeClientOrders(){
@@ -198,23 +298,28 @@ function orders(){
     var entreeCb2 = document.getElementById('entreeCb2');
     var entreeCb3 = document.getElementById('entreeCb3');
     var entreeCb4 = document.getElementById('entreeCb4');
+    var entreeCb5 = document.getElementById('entreeCb5');
+    var entreeCb6 = document.getElementById('entreeCb6');
     var comment = document.getElementById("m-comment");
     let orders = [];
 
         if (entreeCb1.checked){
             orders.push(1);
         }
-
         if (entreeCb2.checked){
             orders.push(2);
         }
-
         if (entreeCb3.checked){
             orders.push(3);
         }
-
         if (entreeCb4.checked){
             orders.push(4);
+        }
+        if (entreeCb5.checked){
+            orders.push(5);
+        }
+        if (entreeCb6.checked){
+            orders.push(6);
         }
 
         return orders
@@ -224,18 +329,24 @@ function orders(){
     var sideCb1 = document.getElementById('sideCb1');
     var sideCb2 = document.getElementById('sideCb2');
     var sideCb3 = document.getElementById('sideCb3'); 
+    var sideCb4 = document.getElementById('sideCb4');
+    var sideCb5 = document.getElementById('sideCb5');
     let orders = [];
         
         if (sideCb1.checked){
             orders.push(1);
-        }
-        
+        }                
         if (sideCb2.checked){
             orders.push(2);
-        }
-        
+        }                
         if (sideCb3.checked){
             orders.push(3);
+        }
+        if (sideCb4.checked){
+            orders.push(4);
+        }
+        if (sideCb5.checked){
+            orders.push(5);
         }
         
         return orders
@@ -277,7 +388,6 @@ function orders(){
         }
     }
 
-    const clientOne = new clientOrders(breakfastEntreePrices, breakfastSidePrices, entreeClientOrders(), sideClientOrders());
+    const clientOne = new clientOrders(dinnerEntreePrices, dinnerSidePrices, entreeClientOrders(), sideClientOrders());
     clientOne.totalCalculating();
 }   
-
