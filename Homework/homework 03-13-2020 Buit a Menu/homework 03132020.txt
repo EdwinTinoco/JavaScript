@@ -11,38 +11,110 @@ Build it however you see fit.
 Essay Questions:
 
 What is MongoDB?
-What is a MongoDB Collection?
-What is a Document and how do you use them in mongodb?
-What is the find() method used for?
-What is the .pretty used for?
-What is the difference between SQL databases and Mongodb?
-How would you add a document in a mongodb database?
-How would you use a projection?
-How do you run a local instance of mongo?
-How would you delete a document?
+Es una base de datos NoSQL por lo tanto es no relacional.
 
-How do you set varaibles in javascript?
+What is a MongoDB Collection?
+Se refiere a conjunto de datos que van a estar almcenados bajo un cierto orden por campos y registros, como una tabla.
+
+What is a Document and how do you use them in mongodb?
+Documento se refiera a los datos que ingresas al la coleccion, es decir, el registro o los registros, bajo los campos o columnas que
+requieras, que se van almacenar en la tabla o coleccion.
+
+What is the find() method used for?
+Es el metodo que se usa para buscar uno o varios documentos en la colleccion.
+
+What is the .pretty used for?
+Pretty se usa para dar un mejor formato o presentacion a los documentos al momento de mostrarlos.
+
+What is the difference between SQL databases and Mongodb?
+SQL es una base de datos relacional con consultas estructuradas, y MongoDb es una base de datos NoSQL.
+
+How would you add a document in a mongodb database?
+Con el comando insert, y escribes los campos y sus datos correspondientes.
+
+How would you use a projection?
+Projections sirve en los querys para mandar parametros de manera que podamos obtener especificamente los datos que queramos.
+
+Projections are various constraints that we can put on our query so that we can ensure that we're only getting back the elements that we actually want
+
+How do you run a local instance of mongo?
+
+How would you delete a document?
+db.collection.remove()
+
+How do you set variables in javascript?
+Se pueden declarar variables usando las siguientes palabras reservadas cons, var, let.
+
 What is javascript hoisting?
+Se refiere a mover todas las declaraciones a la parte superior del programa, o funcion actual. Ademas es una mejor practica de desarrollo.
+
 List 3 javascript datatypes?
+String, Number, Boolean.
+
 How do you use conditionals in javascript?
+Se usa con if condicion{ proceso }
+
 What is a switch statement, and how would you use one?
+Es una condicion en donde puedes listar varios o los casos que necesotes, dependiendo de la condicion. 
+Se usa con switch (condicion){
+case "": proceso;
+break;
+
 What is a ternary operator?
+El ternary operator se usa para condiciones, actua parecido a la condicion if.
+
 What is a function?
+Una funcion es un conjunto de linea de codigo que realizan cierta tarea o proceso, se le pueden pasar parametros, y tambien puede
+devolver o no un valor.
+
 What is a function argument?
+Es una funcion en la cual se le pueden pasar parametros o argumentos al momento de llarmarlas.
+
 What is the "this" keyword in javascript?
+La palabra this hace referencia que pertenece a esa funcion, o clase de la instancia que se esta trabajando.
+
 What is a Javascript array?
+Es una estructura que almacena un conjunto de elementos, y pueden ser de diferentes data types.
+
 What is a Javascript object?
+Es un conjuntos de datos que se usan mediante una llave y su valor. Puede contener diferentes tipos de datos.
+
 List 3 types of javascript loops?
+for in, for of, while
+
 Explain the const variable.
+Es el tipo de variable que no puede se modificada en su valor, y ademas no se puede volver a declarar en el programa.
+
 What do you use for modern string interpolation in Javasript?
+se usa `${variable}`
+
 Explain an arrow function and how you might use one.
+Es una forma de escribir o declarar funciones, es una forma moderna.
+
 What is array destructuring?
+Es la forma practica y rapida de asignar los valores de una array a variables.
+
 What is the javascript spread operator what is it used for?
+Es una forma tambien de asignar o descomponer los valores de un array y asginarlos a variables. Tambien se usa para hacer copias
+de arrays sin hacerlos por referencia para no moficiar el array original.
+
+
 What is Variable Deconstruction in Javascript?
+Es cuando se usan parametros que se envian cuando se llama a una funcion, y se especifican los nombres de las llaves y su valor para que sean
+recibidos como parametros.
+
 How does the this keyword work with arrow functions?
+HAce referencia a las propiedades y atributos dentro de la funcion.
+
 How do you pass a javscript object as function arguments by leveraging decontruction?
+Se pasan los argumentos dentro de curly brackets, ejemplo: const bankInfo = ({accountNum, name, balance}) => {
+
 What is a Javascript Promise?
+Se usa para administrar el tiempo de el flujo de proceso del codigo, es decir que si un proceso o linea de codigo tarda en termnar de ejecutarse ningun otro proceso
+se ejecutara hasta que el primer proceso termine.
+
 What is a Javascript fetch Promise and how might you use it?
+Admnistra las promises que se hayan hecho.
 
 If you weren't here, watch up to and including:
 Implementing Error Handling in a JavaScript Async / Await Function
