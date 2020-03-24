@@ -1,0 +1,69 @@
+/*
+Homework 03/23/2019: 
+
+Use the ES6 Generator tool to spin up a new ES6 project. Put the below functions in a file/files separate from your bootstrap.js. 
+In your bootstrap, import the functions and console.log them, spin up your server, and open your console for me to check.
+*/
+
+/*
+1. Check if input is string and return boolean value
+*/
+
+//ex
+function strChecker(value) {
+	// do stuff
+}
+
+
+console.log(strChecker(31)) // false
+
+/* 
+2. Capitalize the first letter in a string
+*/
+
+// ex
+function capitalizeLetter(str) {
+	// do stuff to me
+}
+
+
+console.log(capitalizeLetter("hi there")) // Hi there
+
+/*
+
+3. Return the largest of 2 numbers
+*/
+
+//ex 
+function largerNum(int1, int2) {
+	// magic things
+}
+
+
+console.log(largerNum(9, 12)) // 12
+
+
+/*
+4. Write a function that joins two strings together
+*/
+
+// ex
+function strJoiner(strOne, strTwo) {
+	// Return some stuff
+}
+
+
+console.log(strJoiner("hi", "there")) // hi there
+
+Gravatar for ryan.curtis88@gmail.com
+Ryan CurtisMarch 23rd 2020 5:05:32 pm
+
+How to create a ES6 project in javascript:
+1. Cd to folder you want your project to live in
+2. js-generate
+3. Name your project APPROPRIATELY (naming conventions)
+4. Cd into project
+5.  open code editor in dir
+6. npm install
+7. Start up server ( npm start )
+8. localhost:3000

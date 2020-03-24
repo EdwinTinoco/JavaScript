@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lodash Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  </head>
+  <body>
+
+  </body>
+
+  <script>
+
+    function siteComponent(func) {
+      return func();
+    }
+
+    widget = () => {
+      return '<div>Hi there</div>';
+    }
+    console.log(siteComponent(widget));
+
+    try {
+      console.log(siteComponent('oops'));
+    } catch(e) {
+      console.log('An error occurred with the siteComponent', e);
+    }
+    
+  </script>
+</html>
