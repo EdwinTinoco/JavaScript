@@ -15,7 +15,6 @@ const weightedLottery = weights => {
 weightedLottery(weights);
 
 
-
 // Jordan example
 const weightedLottery = weights => {
     let containerArray = [];
