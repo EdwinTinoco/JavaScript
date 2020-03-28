@@ -17,6 +17,7 @@ function checkLetter(usersKey) {
       console.log(`Current Playback Rate: ${videoTag.playbackRate.toFixed(2)}`);
       break;
   }
+  updateSpeed();
 }
 function createButtons() {
   const speedDownButton = document.createElement("button");
@@ -60,6 +61,7 @@ function createButtons() {
       } else {
         videoTag.playbackRate -= 0.1;
       }
+      updateSpeed();
     });
   });
   myPersonalVideoControls.appendChild(countSpan);
@@ -68,4 +70,9 @@ function createButtons() {
   myPersonalVideoControls.style.top = "70px";
   myPersonalVideoControls.style.left = "10px";
 }
-createButtons(); 
+function updateSpeed() {
+  document.getElementById(
+    "current-playback-speed"
+  ).innerHTML = videoTag.playbackRate.toFixed(2);
+}
+createButtons();
