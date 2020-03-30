@@ -1,0 +1,106 @@
+Homework 3/27/2020:
+
+How do you create a local repository?
+Se usa el comando git init.
+
+What are the steps to make a commit?
+Debemos usar git add .
+Despues git commi 'm "mensaje"
+Al final git push
+
+We must use git add.
+Then git commi -m "message"
+At the end git push
+
+How would you hide files from git?
+Se debe crear el archivo gitignore para ocultar archivos que no queramos subir.
+
+The gitignore file must be created to hide files that we do not want to upload.
+
+Why would you want to hide files from git?
+Simplemente porque hay archivos que tal vez sean muy pesados y no es tan importante subirlos, o tambien porque simplemente haya algun archivo que no queramos que este en la red.
+
+Simply because there are files that may be very heavy and it is not so important to upload them, or also because there is simply some file that we do not want to be on the network.
+
+What is the purpose of git branches?
+El proposito de branches es para no trabajr directamente con master, se crea una branch se trabaja ahi, y despues se hace juntan los cabios al master.
+
+The purpose of branches is not to work directly with master, a branch is created, work is done there, and then the cables are joined to the master.
+
+Expalin how to merge a remote branch.
+Nos tenemos que posisionar en la rama destino usanado git checkout master
+Desoues hacemos el git merge branch_name
+
+We have to position ourselves in the destination branch using git checkout master
+Desoues we do the git merge branch_name
+
+What is the difference between git fetch and git pull?
+En realidad git pull baja los cambios de la rama determinada y la actualiza contra tu repositorio local.
+git fetch baja los cambios de la rama determinada y la coloca en una rama espejo que simplemente es una clase de rama escondida en la cual tú puedes mirar los cambios de dicha rama, para posteriormente hacer merge con tu rama local.
+El git pull simplemente es un git fecth + git merge. No utilizar el git pull si en realidad está dudoso de qué cambios puedan traerse del repositorio remoto.
+
+Git pull actually downloads the changes from the given branch and updates it against your local repository.
+git fetch downloads the changes of the determined branch and places it in a mirror branch that is simply a hidden branch class in which you can look at the changes of said branch, to later merge with your local branch.
+The git pull is simply a git fecth + git merge. Don't use the git pull if you are really unsure what changes can be brought from the remote repository.
+
+How can a merge conflict occur?
+Cuando dos desarrolladores estan trabajando bajo la misma linea de la rama que extrajeron del master.
+
+What is the DOM?
+Es Document Object Model.
+
+How would you add a css class with Vanilla Javascript?
+Con el codigo nombre_variable.classList.Add(nombre_clase)
+
+What are query selectors?
+Se usan para poder agarrar uno o varios elementos del DOM.
+
+What are Javascript event listners?
+Son eventos o acciones que se codifican en los elementos del DOM y estan esperando o escuchando ser llamados para realizar o ejecutar ciertos acciones.
+
+What is onclick and what can we use it for?
+Es un eventos o metodo que se agrega al elemento para realizar ciertos procesos o acciones
+
+What is the difference between onclick and addEventListener?
+onClick se agrega directamente en html al elemento y hace llamar por lo general a alguna funcion de Javascrpit y addEventListener se usa en en el codigo Javascript.
+
+How can you Add and Remove CSS Styles in Vanilla JavaScript?
+if (variable.classList.contains('class_name')) {
+      variable.classList.remove('class_name');
+      variable.classList.add('class_name');
+
+
+What are UML Structural Diagrams?
+Los diagramas estructurales muestran la estructura estática del sistema y sus partes en diferentes niveles de abstracción. Existen un total de siete tipos de diagramas de estructura.
+
+Structural diagrams show the static structure of the system and its parts at different levels of abstraction. There are a total of seven types of structure diagrams.
+
+What are UML Behavioral Diagrams?
+Muestran como se comporta un sistema de información de forma dinámica. Es decir, describe los cambios que sufre un sistema a través del tiempo 
+cuando está en ejecución. 
+
+They show how an information system behaves dynamically. That is, it describes the changes that a system undergoes over time
+when it is running.
+
+What are UML Class Diagram Associations, Multiplicity, and Navigability?
+Es la manera en que estan relacionadas las clases, y la manera en que puedes accesar a ellas
+
+It is the way the classes are related, and the way you can access them
+
+What are UML Activity Diagrams?
+An activity diagram portrays the control flow from a start point to a finish point showing the various decision paths that exist while the activity is being executed.
+
+What are UML Use Case Diagrams?
+A use case diagram is a dynamic or behavior diagram in UML. Use case diagrams model the functionality of a system using actors and use cases. Use cases are a set of actions, services, and functions that the system needs to perform.
+
+What are UML Deployment Diagrams?
+A UML deployment diagram is a diagram that shows the configuration of run time processing nodes and the components that live on them. Deployment diagrams is a kind of structure diagram used in modeling the physical aspects of an object-oriented system.
+
+What are UML Package Diagrams?
+A package diagram is a UML diagram composed only of packages and the dependencies between them. A package is a UML construct that enables you to organize model elements, such as use cases or classes, into groups. 
+
+What are UML Interaction Sequence Diagrams?
+UML Sequence Diagrams are interaction diagrams that detail how operations are carried out. They capture the interaction between objects in the context of a collaboration.
+
+What are UML State Machine Diagrams?
+UML state machine diagrams depict the various states that an object may be in and the transitions between those states. In fact, in other modeling languages, it is common for this type of a diagram to be called a state-transition diagram or even simply a state diagram.
